@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Resources</title>
+    <link rel="stylesheet" href="waterbody.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html">Waterpedia - Water Resources</a></h1>
+        <nav aria-label="Water Resources navigation">
+            <ul>
+                <li class="nav-item news"><a href="news.html" aria-label="Go to News page">News</a></li>
+                <li class="nav-item explore"><a href="explore.html" aria-label="Go to Explore page">Explore</a></li>
+                <li class="nav-item rewards"><a href="rewards.html" aria-label="Go to Rewards page">Rewards</a></li>
+                <li class="nav-item contact"><a href="index.html#contact" aria-label="Go to Contact Us section">Contact Us</a></li>
+                <li class="nav-item faqs"><a href="faqs.html" aria-label="Go to FAQs page">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="hero-section">
+        <section class="hero1">
+            <div class="hero-content">
+                <h1>Depiction of Water Resources Availability</h1>
+            </div>
+        </section>
+        
+        <section class="chart-section transformation-effect">
+            <h2>Distribution of Earth's Water Resources</h2>
+            <canvas id="waterResourcesChart"></canvas>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Waterpedia. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

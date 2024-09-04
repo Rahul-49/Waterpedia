@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Waterpedia: Your source for water conservation news, FAQs, and rewards.">
+    <meta name="keywords" content="Waterpedia, water conservation, news, FAQs, explore, rewards">
+    <meta name="author" content="Waterpedia Team">
+    <title>Waterpedia</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Waterpedia</a></h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li class="nav-item news"><a href="news.html" aria-label="Go to News page">News</a></li>
+                <li class="nav-item explore"><a href="explore.html" aria-label="Go to Explore page">Explore</a></li>
+                <li class="nav-item rewards"><a href="rewards.html" aria-label="Go to Rewards page">Rewards</a></li>
+                <li class="nav-item contact"><a href="index.html#contact" aria-label="Go to Contact Us section">Contact Us</a></li>                <li class="nav-item faqs"><a href="faqs.html" aria-label="Go to FAQs page">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero1">
+            <div class="hero-content">
+                <h1 class="overlay">Welcome to Waterpedia</h1>
+                <p>Your go-to source for water conservation and technology.</p>
+                <a href="#news" class="btn">Explore More</a>
+            </div>
+        </section>
+        <section id="news" class="transformation-effect">
+            <h2>Latest Happenings</h2>
+            <div class="news-slideshow">
+                <a href="waterbody.html" class="news-slide">
+                    <img src="Illustrative_Albedo_Water_0.jpg" alt="Image 1 description" class="slide-image">
+                    <h3>Water Resources Availability</h3>
+                    <p>Click here to know more about how water resources are classified</p>
+                <a href="article2.html" class="news-slide">
+                    <img src="Illustrative_Albedo_Water_0.jpg" alt="Image 1 description" class="slide-image">
+                    <h3>Article 2 Title</h3>
+                    <p>Summary of article 2. This is a short description or excerpt from the news article.</p>
+                </a>
+                <a href="article3.html" class="news-slide">
+                    <img src="Illustrative_Albedo_Water_0.jpg" alt="Image 1 description" class="slide-image">
+                    <h3>Article 3 Title</h3>
+                    <p>Summary of article 3. This is a short description or excerpt from the news article.</p>
+                </a>
+                <!-- Add more news slides as needed -->
+            </div>
+            <button class="prev" aria-label="Previous slide">&#10094;</button>
+            <button class="next" aria-label="Next slide">&#10095;</button>
+        </section>
+
+        <section id="conservation-rewards">
+            <img src="image.png" alt="Image 1 description">
+            <h2>Conservation Rewards</h2>
+            <p>Earn rewards by participating in water conservation activities. Discover how you can contribute and be recognized for your efforts.</p>
+            <ul>
+                <li>Track your water-saving achievements.</li>
+                <li>Participate in community challenges.</li>
+                <li>Redeem rewards for eco-friendly products.</li>
+            </ul>
+            <a href="rewards.html" class="btn">Learn More</a>
+        </section>
+        
+    </main>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, please reach out to us.</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Waterpedia. All rights reserved.</p>
+    </footer>
+
+    <script defer src="scripts.js"></script>
+</body>
+</html>

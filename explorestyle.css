@@ -1,0 +1,259 @@
+/* Apply a background image to the entire page */
+body {
+    background-image: url('waterdrop.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header a {
+    text-decoration: none;
+    color: white; /* Adjust color as needed */
+}
+
+header a:hover {
+    color: #ff0000; /* Change color on hover if desired */
+}
+
+header {
+    background-color: black; 
+    padding: 20px;
+    color: black;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgb(0, 0, 0), /* Semi-transparent black overlay */
+      rgb(0, 0, 0) /* Adjust these values to create different effects */
+    );
+    /* Add more gradient stops for different effects */
+}
+
+footer {
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hero1 {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align:center;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(
+      rgba(107, 104, 104, 0.635), Semi-transparent black overlay 
+      rgba(138, 135, 135,0) /* Adjust these values to create different effects 
+    );
+     Add more gradient stops for different effects */
+}
+
+.hero-content h1, .hero-content p, .hero-content .btn {
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+/* Styling the navigation for better readability over the background */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Header */
+header {
+    background-color:transparent;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: black;
+    font-size: 32px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 1000;
+    padding: 0px 0px;
+    transition: color 0.7s ease;
+    border: solid transparent; 
+    border-width: 1em;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url("hero-background1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: transparent ;
+    padding: 0 20px;
+}
+
+/* Base styles for the transformation effect */
+.transformation-effect {
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* Full viewport height */
+    transform: translateY(20px); /* Start slightly off-screen */
+    opacity: 0; /* Hidden by default */
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+/* Styles when the element is active */
+.transformation-effect.active {
+    transform: translateY(0); /* Move into view */
+    opacity: 1; /* Make visible */
+}
+
+
+/* Optional: Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+/* Hero Section */
+.hero1 {
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero Content Styling */
+.hero-content {
+    max-width: 600px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+
+
+/* Base styles for the explore section */
+#explore {
+    background-color: #e0f7fa; /* Light cyan background for a fresh look */
+    padding: 40px 20px; /* Adequate padding for spacing */
+    text-align: center; /* Center-align text */
+}
+
+#explore h2 {
+    font-size: 2.5em; /* Larger font size for the heading */
+    color: #00796b; /* Teal color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+#explore p {
+    font-size: 1.2em; /* Slightly larger font size for readability */
+    color: #004d40; /* Darker teal for contrast */
+    margin-bottom: 40px; /* Space below the paragraph */
+}
+
+/* Styles for the explore content */
+.explore-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center-align items */
+    gap: 20px; /* Space between items */
+}
+
+.explore-item {
+    background-color: #ffffff; /* White background for items */
+    border: 1px solid #00796b; /* Teal border for emphasis */
+    border-radius: 8px; /* Rounded corners for modern look */
+    padding: 20px;
+    width: 300px; /* Fixed width for consistency */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.explore-item img {
+    width: 100%; /* Make image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #00796b; /* Border below the image */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+.explore-item h3 {
+    font-size: 1.5em; /* Font size for the heading */
+    color: #00796b; /* Teal color for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.explore-item p {
+    font-size: 1em; /* Font size for the paragraph */
+    color: #333; /* Dark color for the text */
+}
+
+
+footer {
+    background-color: #00796b;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}

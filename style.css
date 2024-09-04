@@ -1,0 +1,664 @@
+
+
+/* Apply a background image to the entire page */
+body {
+    background-image: url('waterdrop.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header a {
+    text-decoration: none;
+    color: white; /* Adjust color as needed */
+}
+
+header a:hover {
+    color: #ff0000; /* Change color on hover if desired */
+}
+
+header {
+    background-color: black; 
+    padding: 20px;
+    color: black;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgb(0, 0, 0), /* Semi-transparent black overlay */
+      rgb(0, 0, 0) /* Adjust these values to create different effects */
+    );
+    /* Add more gradient stops for different effects */
+}
+
+footer {
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hero1 {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align:center;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(
+      rgba(107, 104, 104, 0.635), Semi-transparent black overlay 
+      rgba(138, 135, 135,0) /* Adjust these values to create different effects 
+    );
+     Add more gradient stops for different effects */
+}
+
+.hero-content h1, .hero-content p, .hero-content .btn {
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+/* Styling the navigation for better readability over the background */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Header */
+header {
+    background-color:transparent;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: black;
+    font-size: 32px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 1000;
+    padding: 0px 0px;
+    transition: color 0.7s ease;
+    border: solid transparent; 
+    border-width: 1em;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url("hero-background1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: transparent ;
+    padding: 0 20px;
+}
+
+/* Base styles for the transformation effect */
+.transformation-effect {
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* Full viewport height */
+    transform: translateY(20px); /* Start slightly off-screen */
+    opacity: 0; /* Hidden by default */
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+/* Styles when the element is active */
+.transformation-effect.active {
+    transform: translateY(0); /* Move into view */
+    opacity: 1; /* Make visible */
+}
+
+
+/* Optional: Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+/* Hero Section */
+.hero1 {
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero Content Styling */
+.hero-content {
+    max-width: 600px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+
+/* News Section */
+#news {
+    padding: 10px;
+    background-color: transparent;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+}
+
+/* News Section Heading */
+#news h2 {
+    font-size: 36px;
+    margin-bottom: 20px; /* Add some space below the heading */
+    text-align: center;
+}
+
+/* News Slideshow Container */
+.news-slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    border-radius: 10px;
+}
+
+/* News Slides */
+.news-slide {
+    position: relative;
+    display: none;
+    height: 100vh;
+    overflow: hidden;
+    color: transparent; 
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.news-slide h3{
+    font-size: 24px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0); /* Optional: Background for better readability */
+    color: black;
+    margin-top: 150px;
+    font-weight: bold;
+    font-size: 32px;
+    max-width: 80%;
+    text-align: center;
+}
+
+.news-slide p {
+    font-size: 16px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    font-style: bold;
+    border-radius: 5px;
+    margin-top: 70px;
+    font-weight: bold;
+    font-size: 24px; 
+    max-width: 100%; 
+    text-align: center;
+}
+
+/* Show the active slide */
+.news-slide.active {
+    display: block;
+    animation: fade 1s ease-in-out;
+}
+.slide-image{    
+    height: auto;
+    max-height: auto;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+    border-radius: 10px; /* Keep the rounded corners */
+}
+
+/* Fade effect */
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transform: translateY(-50%);
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: green;
+}
+/* News Slideshow Container */
+.news-slideshow {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px; /* Optional: for rounded corners */
+}
+
+/* News Slides */
+.news-slide {
+    display: none; /* Hide all slides by default */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for the slides */
+    border: 1px solid #ddd; /* Border around the slides */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+}
+
+/* Show the active slide */
+.news-slide.active {
+    display: block;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#conservation-rewards {
+    background: linear-gradient(to bottom right, #e943ff, #29e6ff); /* Gradient background from light cyan to light green */
+    padding: 40px 20px; /* Adequate padding around the section */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    /*background-image: url("image.png");*/
+    padding: 60px 30px; /* Adequate padding for spacing */
+    text-align: center; /* Center-align text for a clean look */
+    border-radius: 8px; /* Rounded corners for a modern feel */
+    margin-top: 20px; /* Space above the section */
+    margin-bottom: 20px; /* Space below the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#conservation-rewards h2 {
+    font-size: 2em; /* Larger font size for the heading */
+    color: #004d40; /* Dark green color for emphasis */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+#conservation-rewards p {
+    font-size: 1.2em; /* Slightly larger font size for readability */
+    color: #333; /* Dark text color for contrast */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+#conservation-rewards ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+#conservation-rewards li {
+    font-size: 1.1em; /* Font size for list items */
+    color: #555; /* Medium gray color for list items */
+    margin-bottom: 10px; /* Space between list items */
+}
+
+#conservation-rewards .btn {
+    display: inline-block; /* Inline block for button styling */
+    padding: 10px 20px; /* Button padding */
+    font-size: 1em; /* Font size for the button text */
+    color: #fff; /* White text color */
+    background-color: #00796b; /* Teal background color */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 5px; /* Rounded corners for the button */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+#conservation-rewards .btn:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
+
+/* Styles for the contact section */
+#contact {
+    background: linear-gradient(to bottom right, #fc459e, #ff7919); /* Gradient background from light cyan to light green */
+    padding: 40px 20px; /* Adequate padding around the section */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 20px; /* Space above the section */
+    margin-bottom: 20px; /* Space below the section */
+    max-width: 800px; /* Limit the width of the form */
+    margin: 0 auto; /* Center the section */
+    padding: 40px 20px; /* Adequate padding around the section */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 20px; /* Space above the section */
+    margin-bottom: 20px; /* Space below the section */
+    max-width: 800px; /* Limit the width of the form */
+    margin: 0 auto; /* Center the section */
+}
+
+/* Heading styles */
+#contact h2 {
+    font-size: 2em; /* Larger font size for the heading */
+    color: #000302; /* Dark green color for emphasis */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center-align the heading */
+}
+
+/* Paragraph styles */
+#contact p {
+    font-size: 1.2em; /* Slightly larger font size for readability */
+    color: #000000; /* Dark text color for contrast */
+    margin-bottom: 30px; /* Space below the paragraph */
+    text-align: center; /* Center-align the paragraph */
+}
+
+/* Form styles */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between form elements */
+}
+
+/* Label styles */
+#contact label {
+    font-size: 1em; /* Font size for labels */
+    color: #333; /* Dark color for readability */
+    margin-bottom: 5px; /* Space below the label */
+}
+
+/* Input and textarea styles */
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%; /* Full width for inputs and textarea */
+    padding: 12px; /* Padding inside input and textarea */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners for inputs and textarea */
+    font-size: 1em; /* Font size inside input and textarea */
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+
+/* Button styles */
+#contact button {
+    background: linear-gradient(to bottom right, #00e1ff, #49ee5a); /* Gradient background from light cyan to light green */
+    padding: 40px 20px; /* Adequate padding around the section */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 20px; /* Space above the section */
+    margin-bottom: 20px; /* Space below the section */
+    max-width: 800px; /* Limit the width of the form */
+    margin: 0 auto; /* Center the section */
+    padding: 12px 20px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners for the button */
+    font-size: 1em; /* Font size for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+#contact button:hover {
+    background-color: #003d33; /* Slightly darker green on hover */
+}
+
+
+/* Rewards Page */
+#rewards {
+    padding: 20px;
+    background: linear-gradient(to right, #e0f7fa, #80deea);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rewards-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 300px;
+    margin: 0 10px;
+    text-align: left;
+}
+
+.carousel-item img {
+    background-image: 'amazon-pay-415x300.jpg';
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.carousel-info {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.carousel-prev, .carousel-next {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.points-display {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+.rewards-tasks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rewards-tasks li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.rewards-tasks input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.rewards-tasks label {
+    font-size: 18px;
+    color: #004d40;
+}
+
+footer {
+    background-color: #00796b;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}

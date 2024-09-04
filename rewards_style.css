@@ -1,0 +1,261 @@
+/* Apply a background image to the entire page */
+body {
+    background-image: url('waterdrop.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header a {
+    text-decoration: none;
+    color: white; /* Adjust color as needed */
+}
+
+header a:hover {
+    color: #ff0000; /* Change color on hover if desired */
+}
+
+header {
+    background-color: black; 
+    padding: 20px;
+    color: black;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgb(0, 0, 0), /* Semi-transparent black overlay */
+      rgb(0, 0, 0) /* Adjust these values to create different effects */
+    );
+    /* Add more gradient stops for different effects */
+}
+
+footer {
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hero1 {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align:center;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(
+      rgba(107, 104, 104, 0.635), Semi-transparent black overlay 
+      rgba(138, 135, 135,0) /* Adjust these values to create different effects 
+    );
+     Add more gradient stops for different effects */
+}
+
+.hero-content h1, .hero-content p, .hero-content .btn {
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+/* Styling the navigation for better readability over the background */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Header */
+header {
+    background-color:transparent;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: black;
+    font-size: 32px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 1000;
+    padding: 0px 0px;
+    transition: color 0.7s ease;
+    border: solid transparent; 
+    border-width: 1em;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url("hero-background1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: transparent ;
+    padding: 0 20px;
+}
+
+/* Rewards Page */
+#rewards {
+    padding: 20px;
+    background: linear-gradient(to right, #e0f7fa, #80deea);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rewards-container h2 {
+    color: #00796b;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.rewards-container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-prev, .carousel-next {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-prev {
+    left: 0;
+}
+
+.carousel-next {
+    right: 0;
+}
+
+.carousel-track {
+    display: flex;
+    overflow: hidden;
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 300px;
+    margin: 0 10px;
+    background-color: white;
+    border: 1px solid #00796b;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-bottom: 1px solid #00796b;
+    margin-bottom: 10px;
+}
+
+.carousel-info h3 {
+    color: #00796b;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.carousel-info p {
+    font-size: 1em;
+    color: #333;
+}
+
+.points-display {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.points-display h3 {
+    font-size: 1.5em;
+    color: #00796b;
+}
+
+.rewards-tasks {
+    margin-top: 30px;
+}
+
+.rewards-tasks h3 {
+    font-size: 1.5em;
+    color: #00796b;
+    margin-bottom: 15px;
+}
+
+.rewards-tasks ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.rewards-tasks ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
