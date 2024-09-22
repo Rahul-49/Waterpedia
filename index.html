@@ -18,7 +18,11 @@
                 <li class="nav-item news"><a href="news.html" aria-label="Go to News page">News</a></li>
                 <li class="nav-item explore"><a href="explore.html" aria-label="Go to Explore page">Explore</a></li>
                 <li class="nav-item rewards"><a href="rewards.html" aria-label="Go to Rewards page">Rewards</a></li>
-                <li class="nav-item contact"><a href="index.html#contact" aria-label="Go to Contact Us section">Contact Us</a></li>                <li class="nav-item faqs"><a href="faqs.html" aria-label="Go to FAQs page">FAQs</a></li>
+                <li id="login-section">
+                    <!-- This section will toggle based on login status -->
+                    <a href="login.html" id="login-link" aria-label="Login/Register">Login/Register</a>
+                    <a href="#" id="profile-link" style="display: none;" aria-label="View Profile">Profile</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -83,6 +87,29 @@
             <button type="submit">Send</button>
         </form>
     </section>
+    <!-- Login/Register Modal -->
+<div id="login-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="login-form">
+            <h2>Login</h2>
+            <label for="email">Email:</label>
+            <input type="email" id="login-email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="login-password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <form id="register-form">
+            <h2>Register</h2>
+            <label for="reg-email">Email:</label>
+            <input type="email" id="reg-email" name="email" required>
+            <label for="reg-password">Password:</label>
+            <input type="password" id="reg-password" name="password" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</div>
 
     <footer>
         <p>&copy; 2024 Waterpedia. All rights reserved.</p>
