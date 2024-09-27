@@ -15,6 +15,38 @@ body {
     background-repeat: no-repeat;
 }
 
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensures the video is behind content */ /* Fallback image */
+    background-size: cover; /* Cover the entire area */
+}
+
+video {
+    position: fixed; /* Fix the video to the viewport */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    min-width: 100%; /* Ensure it covers the full width */
+    min-height: 100%; /* Ensure it covers the full height */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    transform: translate(-50%, -50%); /* Center the video */
+    object-fit: cover; /* Ensure the video covers the area without distortion */
+    z-index: -1; /* Place the video behind all content */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Bring content above the video */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 20px;
+}
+
 header a {
     text-decoration: none;
     color: white; /* Adjust color as needed */
@@ -35,10 +67,10 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        rgb(0, 0, 0), /* Semi-transparent black overlay */
-      rgb(0, 0, 0) /* Adjust these values to create different effects */
-    );
+    background-color: transparent;
+    /*background: linear-gradient(
+        rgb(241, 113, 113),  Semi-transparent black overlay */
+     /* Adjust these values to create different effects */
     /* Add more gradient stops for different effects */
 }
 
